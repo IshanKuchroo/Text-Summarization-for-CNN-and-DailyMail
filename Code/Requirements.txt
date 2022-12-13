@@ -1,0 +1,9 @@
+pip install cleantext
+
+pip install accelerator
+
+pip install evaluate
+
+pip install accelerate
+
+pip install shap

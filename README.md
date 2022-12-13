@@ -24,7 +24,9 @@ mv b0i9v85is577gaavz0s4ef72bfpza1re.csv cnn_stories.csv
 
 # HOW TO RUN:
 
-Simply execute the BART_Transformer.py file in the Code folder.
+1. Please check Requirements.txt file to see additional packages that need to be installed.
+
+2. Simply execute the BART_Transformer.py file in the Code folder.
 
 
 NOTE: The process takes around 8-9 hours to complete for 5 epochs.
