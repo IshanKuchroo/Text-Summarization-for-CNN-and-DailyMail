@@ -336,4 +336,4 @@ def create_DataLoaders():
                                                   num_workers=0
                                                   )
 
-    return train_dataloader, test_dataloader, val_dataloader, tokenizer
+    return train_dataloader, test_dataloader, val_dataloader, tokenizer, test_df

@@ -19,6 +19,7 @@ from tqdm import tqdm
 from transformers import AutoModelForSeq2SeqLM, get_scheduler
 
 from Preprocessing import create_DataLoaders
+from SHAP_Function import shap_explanation
 
 # Data preprocessing
 # Naive Bayes
@@ -48,7 +49,7 @@ device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cp
 # -----------------------------------MODEL BUILDING ----------------------------------------------------#
 # ------------------------------------------------------------------------------------------------------#
 
-train_dataloader, val_dataloader, test_dataloader, tokenizer = create_DataLoaders()
+train_dataloader, val_dataloader, test_dataloader, tokenizer, test_df = create_DataLoaders()
 
 
 def postprocess_text(preds, labels):
@@ -347,5 +348,7 @@ preds, labels = evaluate(test_dataloader, trained_model)
 print("Predicted Summary: ", preds)
 print("\n")
 print("Original Summary: ", labels)
+
+shap_explanation(test_df, trained_model, tokenizer)
 
 
