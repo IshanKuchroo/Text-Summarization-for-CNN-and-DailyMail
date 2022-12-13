@@ -42,8 +42,6 @@ from sklearn.metrics import accuracy_score
 
 torch.cuda.empty_cache()
 
-output_dir = '/home/ubuntu/nlp_aws_repo/Final_Project'
-
 stop_words = set(stopwords.words('english'))
 
 

@@ -39,8 +39,6 @@ from sklearn.metrics import accuracy_score
 # from utils import add_special_tokens, beam_search, generate_beam_sample, generate_sample, sample_seq, set_seed, \
 #     top_k_top_p_filtering
 
-output_dir = '/home/ubuntu/nlp_aws_repo/Final_Project'
-
 stop_words = set(stopwords.words('english'))
 
 
