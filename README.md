@@ -9,13 +9,13 @@ passages from which the system is expected to answer the fill-in the-blank quest
 
 # HOW TO DOWNLOAD DATA
 
-1. Go to the "Code" folder and execute following statements:
+1. Go to the "Code" folder, on the terminal, and execute following statements:
 
 wget https://gwu.box.com/shared/static/b0i9v85is577gaavz0s4ef72bfpza1re.csv
 
 wget https://gwu.box.com/shared/static/2siztdfwbiglakocgm7ugiewgopdgvl5.csv
 
-2. Then Rename files as follows:
+2. Rename files as follows:
 
 mv 2siztdfwbiglakocgm7ugiewgopdgvl5.csv dailymail_stories.csv
 
